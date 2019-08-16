@@ -70,6 +70,7 @@ Pod::Spec.new do |s|
       ss.public_header_files = 'Polaris/Classes/Navigation/*.h'
   end
   s.subspec 'Refresh' do |ss|
+      ss.dependency 'Polaris/Normal'
       ss.source_files = 'Polaris/Classes/Refresh/*.{h,m}'
       ss.public_header_files = 'Polaris/Classes/Refresh/*.h'
   end
