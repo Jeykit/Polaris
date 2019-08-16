@@ -1,0 +1,6 @@
+framework module Pods_Polaris_Example {
+  umbrella header "Pods-Polaris_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

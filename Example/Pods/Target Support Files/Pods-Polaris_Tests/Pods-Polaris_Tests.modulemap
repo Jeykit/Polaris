@@ -1,0 +1,6 @@
+framework module Pods_Polaris_Tests {
+  umbrella header "Pods-Polaris_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
