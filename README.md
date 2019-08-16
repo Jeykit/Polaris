@@ -22,7 +22,7 @@ pod 'Polaris'
 
 ## Author
 
-392071745@qq.com, wwwzp365com@gmail.com
+Jyekit
 
 ## License
 

@@ -6,7 +6,7 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 # pod repo push Polaris Polaris.podspec --allow-warnings --use-libraries
 # pod trunk register 392071745@qq.com 'Jekity' --verbose
-# pod trunk push MUKit.podspec --use-libraries --allow-warnings
+# pod trunk push Polaris.podspec --use-libraries --allow-warnings
 #
 
 Pod::Spec.new do |s|
@@ -51,6 +51,7 @@ Pod::Spec.new do |s|
       ss.dependency 'Polaris/Layout'
       ss.dependency 'Polaris/Refresh'
       ss.dependency 'Polaris/TipsView'
+      ss.dependency 'Polaris/Public'
       ss.source_files = 'Polaris/Classes/TableView/*.{h,m}'
       ss.public_header_files = 'Polaris/Classes/TableView/*.h'
   end
@@ -58,6 +59,7 @@ Pod::Spec.new do |s|
       ss.dependency 'Polaris/Layout'
       ss.dependency 'Polaris/Refresh'
       ss.dependency 'Polaris/TipsView'
+      ss.dependency 'Polaris/Public'
       ss.source_files = 'Polaris/Classes/CollectionView/*.{h,m}'
       ss.public_header_files = 'Polaris/Classes/CollectionView/*.h'
   end
@@ -79,7 +81,6 @@ Pod::Spec.new do |s|
       ss.public_header_files = 'Polaris/Classes/TipsView/*.h'
   end
   s.subspec 'Public' do |ss|
-      ss.dependency 'Polaris/Normal'
       ss.source_files = 'Polaris/Classes/Public/*.{h,m}'
       ss.public_header_files = 'Polaris/Classes/Public/*.h'
   end
