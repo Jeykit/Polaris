@@ -11,7 +11,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Polaris'
-  s.version          = '1.0.2'
+  s.version          = '1.0.1'
   s.summary          = 'Ease to use in iOS'
 
 # This description is used to generate tags and improve search results.
@@ -109,7 +109,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'ImageManager' do |ss|
       ss.source_files = 'Polaris/Classes/ImageCache/*.{h,m}'
-      ss.public_header_files = 'Polaris/Classes/ImageCache/{UIImageView+CacheM, PSImageCacheManager}.h'
+      ss.public_header_files = 'Polaris/Classes/ImageCache/*.h'
   end
   
 end
