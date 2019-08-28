@@ -8,13 +8,17 @@
 
 #import "PolarisViewController.h"
 #import "PolarisViewNewController.h"
+#import "RootViewController.h"
+#import "TriditionTableViewCell.h"
+#import "FlyImageTableViewCell.h"
+#import "FlyImageLayerTableViewCell.h"
+#import "SDWebImageTableViewCell.h"
 
 @interface PolarisViewController ()
 
 @end
 
 @implementation PolarisViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -62,7 +66,24 @@
 //    }];
 }
 Click_SignalM(tpa){
-    [self.navigationController pushViewController:[PolarisViewNewController new] animated:YES];
+    RootViewController*rootViewController= [RootViewController new];
+    rootViewController.suffix = @".jpg";
+    rootViewController.heightOfCell = 150;
+    rootViewController.cellsPerRow = 1;
+    rootViewController.activeIndex = 2;
+    rootViewController.cells = @[ @{
+                                      @"class": [TriditionTableViewCell class],
+                                      @"title": @"UIKit"
+                                      },@{
+                                      @"class": [SDWebImageTableViewCell class],
+                                      @"title": @"SDWebImage"
+                                      } ,@{
+                                      @"class": [FlyImageTableViewCell class],
+                                      @"title": @"MUImageView"
+                                      }];
+    
+    [self.navigationController pushViewController:rootViewController animated:YES];
+//    [self.navigationController pushViewController:[PolarisViewNewController new] animated:YES];
 }
 - (void)didReceiveMemoryWarning
 {

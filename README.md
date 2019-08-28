@@ -22,7 +22,7 @@ pod 'Polaris'
 
 ## Author
 
-Jyekit
+Jeykit
 
 ## License
 

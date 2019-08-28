@@ -323,6 +323,7 @@
     return color;
 }
 - (void)deallocM{
+    objc_setAssociatedObject(self, @selector(navigationM), nil, OBJC_ASSOCIATION_ASSIGN);
 #if DEBUG
     NSLog(@"%@ ---------------  dealloc",NSStringFromClass([self class]));
 #endif

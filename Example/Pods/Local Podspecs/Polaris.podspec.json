@@ -1,6 +1,6 @@
 {
   "name": "Polaris",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "Ease to use in iOS",
   "description": "实现Flebox布局/信号/导航/TableView",
   "homepage": "https://github.com/Jeykit/Polaris",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Jeykit/Polaris.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -37,6 +37,9 @@
         ],
         "Polaris/TipsView": [
 
+        ],
+        "Polaris/Public": [
+
         ]
       },
       "source_files": "Polaris/Classes/TableView/*.{h,m}",
@@ -52,6 +55,9 @@
 
         ],
         "Polaris/TipsView": [
+
+        ],
+        "Polaris/Public": [
 
         ]
       },
@@ -70,6 +76,11 @@
     },
     {
       "name": "Refresh",
+      "dependencies": {
+        "Polaris/Normal": [
+
+        ]
+      },
       "source_files": "Polaris/Classes/Refresh/*.{h,m}",
       "public_header_files": "Polaris/Classes/Refresh/*.h"
     },
@@ -80,11 +91,6 @@
     },
     {
       "name": "Public",
-      "dependencies": {
-        "Polaris/Normal": [
-
-        ]
-      },
       "source_files": "Polaris/Classes/Public/*.{h,m}",
       "public_header_files": "Polaris/Classes/Public/*.h"
     },
@@ -112,6 +118,11 @@
 
         ]
       }
+    },
+    {
+      "name": "ImageManager",
+      "source_files": "Polaris/Classes/ImageCache/*.{h,m}",
+      "public_header_files": "Polaris/Classes/ImageCache/*.h"
     }
   ]
 }

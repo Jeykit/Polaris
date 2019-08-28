@@ -24,6 +24,16 @@
 		7697C4995F17CF02F563768E /* Pods_Polaris_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D7F1FDB1F3BA3475424ED8 /* Pods_Polaris_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A41B54A52304FCBA005DD8E0 /* PolarisViewNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B54A42304FCBA005DD8E0 /* PolarisViewNewController.m */; };
+		A4C335FB2314C3360061A0EC /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335E62314C3360061A0EC /* BaseTableViewCell.m */; };
+		A4C335FC2314C3360061A0EC /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335EE2314C3360061A0EC /* YYWeakProxy.m */; };
+		A4C335FD2314C3360061A0EC /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F02314C3360061A0EC /* YYFPSLabel.m */; };
+		A4C335FE2314C3360061A0EC /* TriditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F32314C3360061A0EC /* TriditionTableViewCell.m */; };
+		A4C335FF2314C3360061A0EC /* FlyImageIconViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F42314C3360061A0EC /* FlyImageIconViewTableViewCell.m */; };
+		A4C336002314C3360061A0EC /* FlyImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F52314C3360061A0EC /* FlyImageTableViewCell.m */; };
+		A4C336012314C3360061A0EC /* FlyImageLayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F62314C3360061A0EC /* FlyImageLayerTableViewCell.m */; };
+		A4C336022314C3360061A0EC /* SDWebImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F72314C3360061A0EC /* SDWebImageTableViewCell.m */; };
+		A4C336032314C3360061A0EC /* FlyImageIconLayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F82314C3360061A0EC /* FlyImageIconLayerTableViewCell.m */; };
+		A4C336042314C3360061A0EC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C335F92314C3360061A0EC /* RootViewController.m */; };
 		BBE490D08F1A990E7D74B448 /* Pods_Polaris_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992BBFE881D93EEB4D6363C7 /* Pods_Polaris_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +76,26 @@
 		992BBFE881D93EEB4D6363C7 /* Pods_Polaris_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polaris_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41B54A32304FCBA005DD8E0 /* PolarisViewNewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolarisViewNewController.h; sourceTree = "<group>"; };
 		A41B54A42304FCBA005DD8E0 /* PolarisViewNewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolarisViewNewController.m; sourceTree = "<group>"; };
+		A4C335E62314C3360061A0EC /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		A4C335E72314C3360061A0EC /* TriditionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriditionTableViewCell.h; sourceTree = "<group>"; };
+		A4C335E82314C3360061A0EC /* SDWebImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageTableViewCell.h; sourceTree = "<group>"; };
+		A4C335E92314C3360061A0EC /* FlyImageLayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageLayerTableViewCell.h; sourceTree = "<group>"; };
+		A4C335EA2314C3360061A0EC /* FlyImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageTableViewCell.h; sourceTree = "<group>"; };
+		A4C335EB2314C3360061A0EC /* FlyImageIconViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageIconViewTableViewCell.h; sourceTree = "<group>"; };
+		A4C335EC2314C3360061A0EC /* FlyImageIconLayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyImageIconLayerTableViewCell.h; sourceTree = "<group>"; };
+		A4C335EE2314C3360061A0EC /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		A4C335EF2314C3360061A0EC /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		A4C335F02314C3360061A0EC /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		A4C335F12314C3360061A0EC /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		A4C335F22314C3360061A0EC /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		A4C335F32314C3360061A0EC /* TriditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriditionTableViewCell.m; sourceTree = "<group>"; };
+		A4C335F42314C3360061A0EC /* FlyImageIconViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageIconViewTableViewCell.m; sourceTree = "<group>"; };
+		A4C335F52314C3360061A0EC /* FlyImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageTableViewCell.m; sourceTree = "<group>"; };
+		A4C335F62314C3360061A0EC /* FlyImageLayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageLayerTableViewCell.m; sourceTree = "<group>"; };
+		A4C335F72314C3360061A0EC /* SDWebImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTableViewCell.m; sourceTree = "<group>"; };
+		A4C335F82314C3360061A0EC /* FlyImageIconLayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyImageIconLayerTableViewCell.m; sourceTree = "<group>"; };
+		A4C335F92314C3360061A0EC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A4C335FA2314C3360061A0EC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		AF526136B00084841F9451D4 /* Pods-Polaris_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polaris_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Polaris_Tests/Pods-Polaris_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF1984C867BD616F5390804D /* Pods-Polaris_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polaris_Example.release.xcconfig"; path = "Target Support Files/Pods-Polaris_Example/Pods-Polaris_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DDB3D21836BDAAD45AD1BFED /* Pods-Polaris_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polaris_Example.debug.xcconfig"; path = "Target Support Files/Pods-Polaris_Example/Pods-Polaris_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +167,7 @@
 			children = (
 				6003F59C195388D20070C39A /* PolarisAppDelegate.h */,
 				6003F59D195388D20070C39A /* PolarisAppDelegate.m */,
+				A4C335E42314C3360061A0EC /* ImageCache */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				A41B54A32304FCBA005DD8E0 /* PolarisViewNewController.h */,
 				A41B54A42304FCBA005DD8E0 /* PolarisViewNewController.m */,
@@ -199,6 +230,49 @@
 				0D84DFC7FE503B2AE5332C9E /* Pods-Polaris_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4C335E42314C3360061A0EC /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				A4C335E52314C3360061A0EC /* Cells */,
+				A4C335F92314C3360061A0EC /* RootViewController.m */,
+				A4C335FA2314C3360061A0EC /* RootViewController.h */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		A4C335E52314C3360061A0EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A4C335E62314C3360061A0EC /* BaseTableViewCell.m */,
+				A4C335E72314C3360061A0EC /* TriditionTableViewCell.h */,
+				A4C335E82314C3360061A0EC /* SDWebImageTableViewCell.h */,
+				A4C335E92314C3360061A0EC /* FlyImageLayerTableViewCell.h */,
+				A4C335EA2314C3360061A0EC /* FlyImageTableViewCell.h */,
+				A4C335EB2314C3360061A0EC /* FlyImageIconViewTableViewCell.h */,
+				A4C335EC2314C3360061A0EC /* FlyImageIconLayerTableViewCell.h */,
+				A4C335ED2314C3360061A0EC /* YYFPSLabel */,
+				A4C335F22314C3360061A0EC /* BaseTableViewCell.h */,
+				A4C335F32314C3360061A0EC /* TriditionTableViewCell.m */,
+				A4C335F42314C3360061A0EC /* FlyImageIconViewTableViewCell.m */,
+				A4C335F52314C3360061A0EC /* FlyImageTableViewCell.m */,
+				A4C335F62314C3360061A0EC /* FlyImageLayerTableViewCell.m */,
+				A4C335F72314C3360061A0EC /* SDWebImageTableViewCell.m */,
+				A4C335F82314C3360061A0EC /* FlyImageIconLayerTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A4C335ED2314C3360061A0EC /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A4C335EE2314C3360061A0EC /* YYWeakProxy.m */,
+				A4C335EF2314C3360061A0EC /* YYFPSLabel.h */,
+				A4C335F02314C3360061A0EC /* YYFPSLabel.m */,
+				A4C335F12314C3360061A0EC /* YYWeakProxy.h */,
+			);
+			path = YYFPSLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,15 +383,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Polaris_Example/Pods-Polaris_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Polaris/Polaris.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polaris.framework",
 			);
@@ -353,8 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Polaris_Tests/Pods-Polaris_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
@@ -363,8 +431,6 @@
 				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
@@ -405,10 +471,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C335FD2314C3360061A0EC /* YYFPSLabel.m in Sources */,
+				A4C335FB2314C3360061A0EC /* BaseTableViewCell.m in Sources */,
 				A41B54A52304FCBA005DD8E0 /* PolarisViewNewController.m in Sources */,
+				A4C335FF2314C3360061A0EC /* FlyImageIconViewTableViewCell.m in Sources */,
+				A4C335FC2314C3360061A0EC /* YYWeakProxy.m in Sources */,
+				A4C335FE2314C3360061A0EC /* TriditionTableViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* PolarisAppDelegate.m in Sources */,
+				A4C336022314C3360061A0EC /* SDWebImageTableViewCell.m in Sources */,
+				A4C336042314C3360061A0EC /* RootViewController.m in Sources */,
+				A4C336012314C3360061A0EC /* FlyImageLayerTableViewCell.m in Sources */,
+				A4C336032314C3360061A0EC /* FlyImageIconLayerTableViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* PolarisViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A4C336002314C3360061A0EC /* FlyImageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
