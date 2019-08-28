@@ -95,6 +95,8 @@
                                                      countOfBytesReceived:countOfBytesReceived];
     if (blurImage) {
         _progressiveImages[key] = @[progressive];
+    }else{
+        _progressiveImages[key] = @[];
     }
     [_lock unlock];
     return blurImage;
@@ -104,7 +106,8 @@
     NSParameterAssert(key != nil);
     @synchronized(_progressiveImages)
     {
-        return [_progressiveImages objectForKey:key] != nil;
+        NSArray *progressiveArray = [_progressiveImages objectForKey:key];
+        return (progressiveArray.count > 0);
     }
 }
 - (void)removeProgressImageWithKey:(NSString *)key{
