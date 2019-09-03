@@ -8,13 +8,15 @@
 #import "PopupView.h"
 #import "PSSheetView.h"
 #import "PSAlertView.h"
+#import "PSPopupView.h"
 
-@interface PopupView()<PSAlertViewSelectedDelegate, PSSheetViewSelectedDelegate>
+@interface PopupView()<PSAlertViewSelectedDelegate, PSSheetViewSelectedDelegate , PSPopupViewSelectedDelegate>
 @property (nonatomic, strong) UIWindow *rootWindow;
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) UIView *contentview;
 @property (nonatomic, strong) PSSheetView *sheetView;
 @property (nonatomic, strong) PSAlertView *alertView;
+@property (nonatomic, strong) PSPopupView *popupView;
 
 @property (nonatomic,copy) void(^selectedBlock)(NSUInteger index);
 @end
@@ -88,6 +90,21 @@
     [self showAnimationWithAlertView:self.alertView];
     
 }
+- (void)showPopupViewWithView:(UIView *)view
+                      options:(NSArray *)options
+                        block:(void (^)(NSUInteger))block
+{
+    _popupView = [[PSPopupView alloc] initPopupViewWithView:view
+                                                      items:options];
+    [self.contentview addSubview:_popupView];
+    _popupView.delegate  = self;
+    self.selectedBlock = block;
+    _contentview.backgroundColor = [UIColor clearColor];
+    self.rootWindow.hidden = NO;
+    [self.rootWindow addSubview:self];
+    
+    [self showAnimationWithPopupView:_popupView];
+}
 - (void)showAnimationWithView:(UIView *)view
 {
     CGRect frame = self.backgroundView.frame;
@@ -117,6 +134,22 @@
     
     [UIView animateWithDuration:.25 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.backgroundView.alpha = .25;
+        self.contentview.alpha = 1.0;
+        
+    } completion:^(BOOL finished) {
+        self.backgroundView.userInteractionEnabled = YES;
+    }];
+}
+
+//popup view
+- (void)showAnimationWithPopupView:(PSPopupView *)view
+{
+    CGSize contentSize = view.frame.size;
+    self.contentview.alpha = 0;
+    self.contentview.frame = CGRectMake(view.XPosition, view.YPosition, view.frame.size.width, contentSize.height);
+    
+    [UIView animateWithDuration:.25 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.backgroundView.alpha = 0.05;
         self.contentview.alpha = 1.0;
         
     } completion:^(BOOL finished) {
@@ -206,6 +239,12 @@
         self.selectedBlock = nil;
     }
    
+    if (self.popupView) {
+        [self hideAnimationWithAlertView:self.popupView];
+        _contentview = nil;
+        self.popupView = nil;
+        self.selectedBlock = nil;
+    }
 }
 - (void)alertViewOptionsSelected:(NSUInteger)index{
     [self hideAnimationWithAlertView:self.alertView];
@@ -223,6 +262,15 @@
     }
     _contentview = nil;
     self.sheetView = nil;
+    self.selectedBlock = nil;
+}
+- (void)popupViewOptionsSelected:(NSUInteger)index{
+    [self hideAnimationWithAlertView:self.popupView];
+    if (self.selectedBlock) {
+        self.selectedBlock(index);
+    }
+    _contentview = nil;
+    self.popupView = nil;
     self.selectedBlock = nil;
 }
 @end

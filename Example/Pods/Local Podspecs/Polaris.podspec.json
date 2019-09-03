@@ -127,7 +127,7 @@
     {
       "name": "PopupView",
       "source_files": "Polaris/Classes/PopupView/*.{h,m}",
-      "public_header_files": "Polaris/Classes/PopupView/*.h"
+      "public_header_files": "Polaris/Classes/PopupView/{PopupViewManager,PSPopupItem}.h"
     }
   ]
 }

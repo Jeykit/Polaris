@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'PopupView' do |ss|
       ss.source_files = 'Polaris/Classes/PopupView/*.{h,m}'
-      ss.public_header_files = 'Polaris/Classes/PopupView/{PopupViewManager,PopupView}.h'
+      ss.public_header_files = 'Polaris/Classes/PopupView/{PopupViewManager,PSPopupItem}.h'
   end
   
 end

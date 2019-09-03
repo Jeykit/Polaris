@@ -33,4 +33,14 @@
                                                 options:options
                                                   block:block];
 }
+
++ (void)showPopupViewWithView:(UIView *)view
+                      options:(NSArray *)options
+                        block:(void (^)(NSUInteger))block
+{
+    [[PopupView sharedInstance] showPopupViewWithView:view
+                                              options:options
+                                                block:block];
+    
+}
 @end

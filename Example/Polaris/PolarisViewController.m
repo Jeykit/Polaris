@@ -26,7 +26,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"你好";
-    self.view.clickSignalName = @"tpa";
+//    self.view.clickSignalName = @"tpa";
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 120, 100, 80, 50)];
+//    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 200, 50)];
+    [self.view addSubview:button];
+    [button setTitle:@"123" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.clickSignalName = @"tapClicked";
+    button.layer.cornerRadius = 5.;
+    button.layer.borderWidth = 1.;
+    button.layer.borderColor = [UIColor grayColor].CGColor;
 	// Do any additional setup after loading the view, typically from a nib.
 //    self.view.backgroundColor = [UIColor whiteColor];
 //    [self.view configureLayoutWithBlock:^(LayoutManager * _Nonnull layoutM) {
@@ -97,6 +107,18 @@ Click_SignalM(tpa){
 //        NSLog(@"========%ld", index);
 //    }];
     [PopupViewManager showSheetViewWithTitile:@"测试" detail:@"试试看" options:@[item1,item2] cancel:item3 block:^(NSUInteger index) {
+        NSLog(@"========%ld", index);
+    }];
+}
+Click_SignalM(tapClicked){
+    UIView *view = object;
+    PSPopupItem *item1 = [[PSPopupItem alloc] init];
+    item1.title = @"123";
+    PSPopupItem *item2 = [[PSPopupItem alloc] init];
+    item2.title = @"345";
+    PSPopupItem *item3 = [[PSPopupItem alloc] init];
+    item3.title = @"567";
+    [PopupViewManager showPopupViewWithView:view options:@[item1, item2, item3] block:^(NSUInteger index) {
         NSLog(@"========%ld", index);
     }];
 }

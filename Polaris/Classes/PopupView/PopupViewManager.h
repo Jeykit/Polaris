@@ -21,5 +21,9 @@
                         options:(NSArray *)options
                           block:(void(^)(NSUInteger index))block;
 
++ (void)showPopupViewWithView:(UIView *)view
+                      options:(NSArray *)options
+                        block:(void(^)(NSUInteger index))block;
+
 @end
 
