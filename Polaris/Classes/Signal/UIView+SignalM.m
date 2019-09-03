@@ -302,7 +302,9 @@ static BOOL forceRefrshMU = NO;//强制刷新标志
     }
     return UIControlEventTouchUpInside;
 }
-
+- (void)dealloc{
+     objc_setAssociatedObject(self, @selector(signalM), nil, OBJC_ASSOCIATION_ASSIGN);
+}
 @end
 @implementation NSObject (SignalM)
 -(void)sendSignal:(NSString *)signalName target:(NSObject *)target object:(id)object{

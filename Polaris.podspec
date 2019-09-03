@@ -109,7 +109,12 @@ Pod::Spec.new do |s|
   end
   s.subspec 'ImageManager' do |ss|
       ss.source_files = 'Polaris/Classes/ImageCache/*.{h,m}'
-      ss.public_header_files = 'Polaris/Classes/ImageCache/{UIImageView+CacheM, PSImageCacheManager}.h'
+      ss.public_header_files = 'Polaris/Classes/ImageCache/{UIImageView+CacheM,PSImageCacheManager}.h'
+  end
+  
+  s.subspec 'PopupView' do |ss|
+      ss.source_files = 'Polaris/Classes/PopupView/*.{h,m}'
+      ss.public_header_files = 'Polaris/Classes/PopupView/{PopupViewManager,PopupView}.h'
   end
   
 end

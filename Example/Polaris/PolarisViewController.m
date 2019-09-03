@@ -13,6 +13,8 @@
 #import "FlyImageTableViewCell.h"
 #import "FlyImageLayerTableViewCell.h"
 #import "SDWebImageTableViewCell.h"
+#import "PopupViewManager.h"
+#import "PSPopupItem.h"
 
 @interface PolarisViewController ()
 
@@ -66,24 +68,37 @@
 //    }];
 }
 Click_SignalM(tpa){
-    RootViewController*rootViewController= [RootViewController new];
-    rootViewController.suffix = @".jpg";
-    rootViewController.heightOfCell = 150;
-    rootViewController.cellsPerRow = 1;
-    rootViewController.activeIndex = 2;
-    rootViewController.cells = @[ @{
-                                      @"class": [TriditionTableViewCell class],
-                                      @"title": @"UIKit"
-                                      },@{
-                                      @"class": [SDWebImageTableViewCell class],
-                                      @"title": @"SDWebImage"
-                                      } ,@{
-                                      @"class": [FlyImageTableViewCell class],
-                                      @"title": @"MUImageView"
-                                      }];
-    
-    [self.navigationController pushViewController:rootViewController animated:YES];
+//    RootViewController*rootViewController= [RootViewController new];
+//    rootViewController.suffix = @".jpg";
+//    rootViewController.heightOfCell = 150;
+//    rootViewController.cellsPerRow = 1;
+//    rootViewController.activeIndex = 2;
+//    rootViewController.cells = @[ @{
+//                                      @"class": [TriditionTableViewCell class],
+//                                      @"title": @"UIKit"
+//                                      },@{
+//                                      @"class": [SDWebImageTableViewCell class],
+//                                      @"title": @"SDWebImage"
+//                                      } ,@{
+//                                      @"class": [FlyImageTableViewCell class],
+//                                      @"title": @"MUImageView"
+//                                      }];
+//
+//    [self.navigationController pushViewController:rootViewController animated:YES];
 //    [self.navigationController pushViewController:[PolarisViewNewController new] animated:YES];
+    
+    PSPopupItem *item1 = [[PSPopupItem alloc] init];
+    item1.title = @"123";
+    PSPopupItem *item2 = [[PSPopupItem alloc] init];
+    item2.title = @"345";
+    PSPopupItem *item3 = [[PSPopupItem alloc] init];
+    item3.title = @"567";
+//    [PopupViewManager showAlertViewWithTitile:@"测试" detail:@"试试看" options:@[item1,item2, item3] block:^(NSUInteger index) {
+//        NSLog(@"========%ld", index);
+//    }];
+    [PopupViewManager showSheetViewWithTitile:@"测试" detail:@"试试看" options:@[item1,item2] cancel:item3 block:^(NSUInteger index) {
+        NSLog(@"========%ld", index);
+    }];
 }
 - (void)didReceiveMemoryWarning
 {
