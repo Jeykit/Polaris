@@ -1,0 +1,80 @@
+PODS:
+  - Expecta (1.0.6)
+  - "Expecta+Snapshots (3.1.1)":
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0)
+    - Specta (~> 1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Polaris (1.0.2):
+    - Polaris/Carousel (= 1.0.2)
+    - Polaris/CollectionView (= 1.0.2)
+    - Polaris/ImageManager (= 1.0.2)
+    - Polaris/Layout (= 1.0.2)
+    - Polaris/Navigation (= 1.0.2)
+    - Polaris/Normal (= 1.0.2)
+    - Polaris/PhotoManager (= 1.0.2)
+    - Polaris/PhotoPreview (= 1.0.2)
+    - Polaris/PopupView (= 1.0.2)
+    - Polaris/Public (= 1.0.2)
+    - Polaris/Refresh (= 1.0.2)
+    - Polaris/Signal (= 1.0.2)
+    - Polaris/TableView (= 1.0.2)
+    - Polaris/TipsView (= 1.0.2)
+  - Polaris/Carousel (1.0.2)
+  - Polaris/CollectionView (1.0.2):
+    - Polaris/Layout
+    - Polaris/Public
+    - Polaris/Refresh
+    - Polaris/TipsView
+  - Polaris/ImageManager (1.0.2)
+  - Polaris/Layout (1.0.2)
+  - Polaris/Navigation (1.0.2)
+  - Polaris/Normal (1.0.2)
+  - Polaris/PhotoManager (1.0.2):
+    - Polaris/PhotoPreview
+  - Polaris/PhotoPreview (1.0.2)
+  - Polaris/PopupView (1.0.2)
+  - Polaris/Public (1.0.2)
+  - Polaris/Refresh (1.0.2):
+    - Polaris/Normal
+  - Polaris/Signal (1.0.2)
+  - Polaris/TableView (1.0.2):
+    - Polaris/Layout
+    - Polaris/Public
+    - Polaris/Refresh
+    - Polaris/TipsView
+  - Polaris/TipsView (1.0.2)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - Expecta
+  - "Expecta+Snapshots"
+  - FBSnapshotTestCase
+  - Polaris (from `../`)
+  - Specta
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Expecta
+    - "Expecta+Snapshots"
+    - FBSnapshotTestCase
+    - Specta
+
+EXTERNAL SOURCES:
+  Polaris:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Polaris: 5b6df48fb8f64ad9e58a1a8fc3c7f4dd5f03d8f7
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: 413d4efab3ca7a5f538167e41ab328470ef9ba64
+
+COCOAPODS: 1.8.0.beta.1

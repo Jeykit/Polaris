@@ -1,0 +1,6 @@
+framework module Polaris {
+  umbrella header "Polaris-umbrella.h"
+
+  export *
+  module * { export * }
+}
