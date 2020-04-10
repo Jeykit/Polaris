@@ -36,6 +36,10 @@ static void __ReleaseAsset(void* info, const void* data, size_t size)
         if (drawSize.width < imageSize.width && drawSize.height < imageSize.height) {
             contentsScale = [PSImageCacheUtils contentsScale];
         }
+        if (drawSize.width <= 0 || drawSize.height <= 0) {
+            drawSize.width = imageSize.width/2;
+            drawSize.height = imageSize.height/2;
+        }
         UIImage* decompressedImage = [UIImage imageWithCGImage:imageRef
                                                          scale:contentsScale
                                       

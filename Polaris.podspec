@@ -109,6 +109,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'ImageManager' do |ss|
       ss.source_files = 'Polaris/Classes/ImageCache/*.{h,m}'
+      ss.dependency 'Polaris/Layout'
       ss.public_header_files = 'Polaris/Classes/ImageCache/{UIImageView+CacheM,PSImageCacheManager}.h'
   end
   

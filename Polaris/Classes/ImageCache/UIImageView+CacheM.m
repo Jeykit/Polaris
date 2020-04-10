@@ -8,6 +8,7 @@
 #import "UIImageView+CacheM.h"
 #import "PSImageCacheManager.h"
 #import <objc/message.h>
+#import "UIView+LayoutManager.h"
 
 @implementation UIImageView (CacheM)
 - (void)setImageURLString:(NSString *)imageURLString{
@@ -23,9 +24,16 @@
      NSParameterAssert(imageURLString != nil);
     objc_setAssociatedObject(self, @selector(setImageURLString:), imageURLString, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     __weak typeof(self)weakSelf = self;
+    CGSize size = self.bounds.size;
+    if (size.width <= 0) {
+        size.width = self.layoutM.width;
+    }
+    if (size.height <= 0) {
+        size.height = self.layoutM.height;
+    }
     [[PSImageCacheManager sharedInstance] asyncGetImageWithURLString:imageURLString
                                                 placeHolderImageName:imageName
-                                                            drawSize:self.bounds.size
+                                                            drawSize:size
                                                         cornerRadius:cornerRadius
                                                      contentsGravity:self.layer.contentsGravity
                                                            completed:^(NSString * _Nonnull key, UIImage * _Nonnull image) {
@@ -33,6 +41,9 @@
         NSString* renderer = objc_getAssociatedObject(self, @selector(setImageURLString:));
         if (renderer && [renderer isEqualToString:key]) {
             dispatch_async(dispatch_get_main_queue(), ^{
+                if (!image) {
+                    self.image = [UIImage imageNamed:imageName];
+                }
                 self.image = image;
                 [self setNeedsDisplay];
             });
